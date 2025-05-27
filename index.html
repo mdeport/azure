@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Recettes Gourmandes</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .fade-in {
+      opacity: 0;
+      animation: fadeIn 1s ease-out forwards;
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body class="bg-orange-50 text-gray-800 font-sans">
+
+  <!-- Header -->
+  <header class="bg-orange-500 text-white p-6 shadow-md">
+    <h1 class="text-3xl font-bold text-center fade-in">🍽️ Recettes Gourmandes</h1>
+    <p class="text-center mt-2 fade-in" style="animation-delay: 0.3s;">Découvrez nos meilleures recettes maison</p>
+  </header>
+
+  <!-- Section Recettes -->
+  <section class="p-8 grid grid-cols-1 md:grid-cols-3 gap-6 fade-in" style="animation-delay: 0.6s;">
+    <!-- Carte Recette -->
+    <div class="bg-white rounded-2xl shadow-md overflow-hidden transform hover:scale-105 transition-all duration-300">
+      <img src="https://source.unsplash.com/400x300/?pasta" alt="Pâtes" class="w-full h-48 object-cover">
+      <div class="p-4">
+        <h2 class="text-xl font-semibold mb-2">Pâtes Carbonara</h2>
+        <p class="text-sm">Un classique italien rapide et savoureux à base de crème, lardons et parmesan.</p>
+      </div>
+    </div>
+
+    <!-- Carte Recette -->
+    <div class="bg-white rounded-2xl shadow-md overflow-hidden transform hover:scale-105 transition-all duration-300">
+      <img src="https://source.unsplash.com/400x300/?salad" alt="Salade" class="w-full h-48 object-cover">
+      <div class="p-4">
+        <h2 class="text-xl font-semibold mb-2">Salade fraîcheur</h2>
+        <p class="text-sm">Légumes croquants, vinaigrette maison, et touche de feta pour un repas léger.</p>
+      </div>
+    </div>
+
+    <!-- Carte Recette -->
+    <div class="bg-white rounded-2xl shadow-md overflow-hidden transform hover:scale-105 transition-all duration-300">
+      <img src="https://source.unsplash.com/400x300/?cake" alt="Gâteau" class="w-full h-48 object-cover">
+      <div class="p-4">
+        <h2 class="text-xl font-semibold mb-2">Gâteau au chocolat</h2>
+        <p class="text-sm">Moelleux à souhait, parfait pour les amateurs de chocolat fondant.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-orange-400 text-white text-center p-4 mt-10">
+    <p>&copy; 2025 Recettes Gourmandes — Tous droits réservés</p>
+  </footer>
+
+</body>
+</html>
